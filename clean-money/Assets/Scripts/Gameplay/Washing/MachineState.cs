@@ -7,13 +7,13 @@ namespace cm.gameplay
     {
         [SerializeField]
         protected bool canOccur  = false;
-    
+
         public Vector2 timerRange = new Vector2(2.5f, 15.0f);
         [SerializeField]
         private float _timer = 0.0f;
 
         [SerializeField]
-        private UnityEvent onTimerEnd = null;
+        protected UnityEvent onTimerEnd = null;
 
         [SerializeField]
         private UnityEvent onStateEnter = null;

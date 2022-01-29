@@ -6,9 +6,11 @@ namespace cm.gameplay
 {
     public class WashingMachines : MonoBehaviour
     {
-        [SerializeField]
-        private MachineState currentState = null;
+        public MachineState currentState = null;
 
+        [SerializeField]
+        private MachineState[] randomStates = null;
+        
         [SerializeField]
         private UnityEvent onStart = null;
 
@@ -18,11 +20,18 @@ namespace cm.gameplay
         private void Start()
         {
             onStart?.Invoke();
+
+            SetRandomState();
         }
 
         private void FixedUpdate()
         {
 
+        }
+
+        public void SetRandomState()
+        {
+            SetNewState(randomStates[Random.Range(0, randomStates.Length)]);
         }
 
         public void SetNewState(MachineState state)
