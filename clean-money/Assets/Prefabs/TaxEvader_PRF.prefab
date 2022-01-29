@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2387766225519013027}
   - component: {fileID: 2387766225519013024}
-  - component: {fileID: 2387766225519013025}
+  - component: {fileID: 2384244056923747984}
   - component: {fileID: 2387766225519013026}
   m_Layer: 0
   m_Name: TaxEvader_PRF
@@ -81,7 +81,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
---- !u!136 &2387766225519013025
+--- !u!136 &2384244056923747984
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,10 +91,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 0.3
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: 0.9, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &2387766225519013026
 MonoBehaviour:
   m_ObjectHideFlags: 0
