@@ -34,7 +34,7 @@ namespace cm.gameplay
         private void OnTriggerStay(Collider col)
         {
             PlayerMovement player = col.gameObject.GetComponent<PlayerMovement>();
-            if (Input.GetKeyDown(collectKey) && player)
+            if (Input.GetKeyDown(collectKey) && player && canOccur)
                 onCollect?.Invoke();
         }
     }

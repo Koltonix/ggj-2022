@@ -27,6 +27,9 @@ namespace cm.gameplay
 
         public void SetNewState(MachineState state)
         {
+            if (!state)
+                return;
+
             state.OnStateEnter();
             currentState = state;
 
@@ -35,6 +38,9 @@ namespace cm.gameplay
 
         public void RemoveState()
         {
+            if (!currentState)
+                return;
+
             currentState.OnStateExit();
             currentState = null;
 

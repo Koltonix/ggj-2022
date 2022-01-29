@@ -6,9 +6,10 @@ namespace cm.gameplay
     public class MachineState : MonoBehaviour
     {
         [SerializeField]
-        private bool canOccur  = false;
-
+        protected bool canOccur  = false;
+    
         public Vector2 timerRange = new Vector2(2.5f, 15.0f);
+        [SerializeField]
         private float _timer = 0.0f;
 
         [SerializeField]
