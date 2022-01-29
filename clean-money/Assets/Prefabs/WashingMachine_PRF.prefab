@@ -302,7 +302,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  hitsRequired: 5
+  hitsRequired: 3
   hitsLeft: 0
   onHitValue:
     m_PersistentCalls:
