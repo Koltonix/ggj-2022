@@ -194,6 +194,8 @@ MonoBehaviour:
   currentState: {fileID: 0}
   randomStates:
   - {fileID: 312460242}
+  - {fileID: 7643863431697224952}
+  - {fileID: 8115455891407508632}
   onStart:
     m_PersistentCalls:
       m_Calls: []
@@ -214,7 +216,7 @@ MonoBehaviour:
   canOccur: 0
   playerNearby: 0
   interactKey: 101
-  timerRange: {x: 2.5, y: 15}
+  timerRange: {x: 2.5, y: 30}
   _timer: 0
   onTimerEnd:
     m_PersistentCalls:
@@ -460,7 +462,7 @@ MonoBehaviour:
   canOccur: 0
   playerNearby: 0
   interactKey: 101
-  timerRange: {x: 2.5, y: 15}
+  timerRange: {x: 15, y: 45}
   _timer: 0
   onTimerEnd:
     m_PersistentCalls:

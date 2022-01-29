@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2158.0693, g: 2262.5684, b: 3301.3828, a: 1}
+  m_IndirectSpecularColor: {r: 2157.4785, g: 2261.8223, b: 3301.211, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -505,7 +505,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239000081}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.25, y: 1, z: -3}
+  m_LocalPosition: {x: -5.25, y: 0, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 248590350}
@@ -657,7 +657,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 386665195}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 1, z: -3}
+  m_LocalPosition: {x: -2, y: 0, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 248590350}
@@ -806,7 +806,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 611209107}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: 1, z: -3}
+  m_LocalPosition: {x: 5, y: 0, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 248590350}
@@ -1491,28 +1491,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4037154219199540587, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
   m_PrefabInstance: {fileID: 1340988874}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1439044004 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8115455891407508632, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
-  m_PrefabInstance: {fileID: 2040755740}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0c16cf21dc21e94db439191d27b3184, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1439044005 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7643863431697224952, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
-  m_PrefabInstance: {fileID: 2040755740}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92fe94a196d27ea45b265395f736aebf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1463779104 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4037154219199540587, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
@@ -1730,7 +1708,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1741998577}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 1, z: -3}
+  m_LocalPosition: {x: 2, y: 0, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 248590350}
@@ -1821,7 +1799,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1773579952}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 1, z: 3}
+  m_LocalPosition: {x: -2, y: 0, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 248590350}
@@ -2171,7 +2149,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1885338560}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: 1, z: 3}
+  m_LocalPosition: {x: 5, y: 0, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 248590350}
@@ -2295,18 +2273,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1060171367}
     m_Modifications:
-    - target: {fileID: 312460243, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
-      propertyPath: randomStates.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 312460243, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
-      propertyPath: randomStates.Array.data[1]
-      value: 
-      objectReference: {fileID: 1439044005}
-    - target: {fileID: 312460243, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
-      propertyPath: randomStates.Array.data[2]
-      value: 
-      objectReference: {fileID: 1439044004}
     - target: {fileID: 4037154219199540586, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_Name
       value: WashingMachine_PRF
@@ -2447,7 +2413,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2118730309}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 1, z: 3}
+  m_LocalPosition: {x: 2, y: 0, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 248590350}
@@ -2477,7 +2443,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2128728103}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5, y: 1, z: 3}
+  m_LocalPosition: {x: -5, y: 0, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 248590350}
