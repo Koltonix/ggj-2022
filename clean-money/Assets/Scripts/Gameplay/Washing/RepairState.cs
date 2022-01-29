@@ -7,11 +7,26 @@ namespace cm.gameplay
 {
     public class RepairState : MachineState
     {   
-
         [SerializeField]
         private KeyCode repairKey = KeyCode.E;
 
-       protected override void CountDown() 
+        [SerializeField]
+        private int hitsRequired = 5;
+        [SerializeField]
+        private int hitsLeft = 0;
+
+        [SerializeField]
+        private IntEvent onHitValue = null;
+
+        public override void OnStateEnter()
+        {
+            base.OnStateEnter();
+
+            hitsLeft = hitsRequired;
+            onHitValue?.Invoke(hitsLeft);
+        }
+
+        protected override void CountDown() 
         {
             return;
         }
@@ -20,7 +35,13 @@ namespace cm.gameplay
         {
             PlayerMovement player = col.gameObject.GetComponent<PlayerMovement>();
             if (Input.GetKeyDown(repairKey) && player && canOccur)
-                onTimerEnd?.Invoke();
+            {
+                hitsLeft--;
+                onHitValue?.Invoke(hitsLeft);
+                if (hitsLeft <= 0)
+                    onTimerEnd?.Invoke();
+            }
+                
         }
     }
 }
