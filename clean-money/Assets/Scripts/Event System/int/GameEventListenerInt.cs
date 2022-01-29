@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace cm.Events
+namespace cm.events
 {
     public class GameEventListenerInt : MonoBehaviour
     {

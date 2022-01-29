@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2158.04, g: 2261.7734, b: 3298.8594, a: 1}
+  m_IndirectSpecularColor: {r: 2161.1338, g: 2265.7656, b: 3305.3867, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &18046466 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6812457156735507760, guid: ad71067341cb9e843a1a485ada77a94e, type: 3}
+  m_PrefabInstance: {fileID: 6812457156753408818}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &38948233
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -133,6 +138,10 @@ PrefabInstance:
     - target: {fileID: 4037154219199540586, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_Name
       value: WashingMachine_PRF (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037154219199540586, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4037154219199540587, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_RootOrder
@@ -226,6 +235,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WashingMachine_PRF (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4037154219199540586, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4037154219199540587, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -288,6 +301,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WashingMachine_PRF (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 4037154219199540586, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4037154219199540587, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -338,6 +355,72 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4037154219199540587, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
   m_PrefabInstance: {fileID: 137500596}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &153005664
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 312460241}
+    m_Modifications:
+    - target: {fileID: 6812457156735507760, guid: 0bd05bf7345f9584bb6be0cae3a839c2, type: 3}
+      propertyPath: m_Name
+      value: MoneyIcon_PRF
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812457156735507760, guid: 0bd05bf7345f9584bb6be0cae3a839c2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812457156735507761, guid: 0bd05bf7345f9584bb6be0cae3a839c2, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812457156735507761, guid: 0bd05bf7345f9584bb6be0cae3a839c2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812457156735507761, guid: 0bd05bf7345f9584bb6be0cae3a839c2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812457156735507761, guid: 0bd05bf7345f9584bb6be0cae3a839c2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812457156735507761, guid: 0bd05bf7345f9584bb6be0cae3a839c2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812457156735507761, guid: 0bd05bf7345f9584bb6be0cae3a839c2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812457156735507761, guid: 0bd05bf7345f9584bb6be0cae3a839c2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812457156735507761, guid: 0bd05bf7345f9584bb6be0cae3a839c2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812457156735507761, guid: 0bd05bf7345f9584bb6be0cae3a839c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812457156735507761, guid: 0bd05bf7345f9584bb6be0cae3a839c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812457156735507761, guid: 0bd05bf7345f9584bb6be0cae3a839c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0bd05bf7345f9584bb6be0cae3a839c2, type: 3}
+--- !u!1 &153005665 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6812457156735507760, guid: 0bd05bf7345f9584bb6be0cae3a839c2, type: 3}
+  m_PrefabInstance: {fileID: 153005664}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &157207112
 GameObject:
@@ -566,6 +649,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WashingMachine_PRF (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 4037154219199540586, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4037154219199540587, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -617,11 +704,182 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4037154219199540587, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
   m_PrefabInstance: {fileID: 270540692}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &312460240 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4037154219199540586, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+  m_PrefabInstance: {fileID: 4037154219424509626}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &312460241 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4037154219199540587, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
   m_PrefabInstance: {fileID: 4037154219424509626}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &312460242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312460240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bb1ae3e8ce79a94798e58e256e41c72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canOccur: 0
+  timerRange: {x: 2.5, y: 15}
+  onTimerEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 312460243}
+        m_TargetAssemblyTypeName: cm.gameplay.WashingMachines, Assembly-CSharp
+        m_MethodName: RemoveState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 312460243}
+        m_TargetAssemblyTypeName: cm.gameplay.WashingMachines, Assembly-CSharp
+        m_MethodName: SetNewState
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: cm.gameplay.MachineState, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onStateEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 18046466}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  onStateExit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 18046466}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &312460243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312460240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43c48e4064b21a7418a728153732fc82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: {fileID: 0}
+  onStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 312460243}
+        m_TargetAssemblyTypeName: cm.gameplay.WashingMachines, Assembly-CSharp
+        m_MethodName: SetNewState
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 312460244}
+          m_ObjectArgumentAssemblyTypeName: cm.gameplay.MachineState, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onNewState: {fileID: 11400000, guid: 1947543e5c830324d8351871423df5d1, type: 2}
+  onRemoveState: {fileID: 11400000, guid: 947a16044c44d1b4eb91e6b63a9b41ef, type: 2}
+--- !u!114 &312460244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312460240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2a4f31aa69035748afb1938bb8c3dd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canOccur: 0
+  timerRange: {x: 2.5, y: 15}
+  onTimerEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  onStateEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 153005665}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  onStateExit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 153005665}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  collectKey: 101
+  amount: 50
+  onCollect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 312460243}
+        m_TargetAssemblyTypeName: cm.gameplay.WashingMachines, Assembly-CSharp
+        m_MethodName: RemoveState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onMoneyIncrease: {fileID: 11400000, guid: cda8f8b78aa412a48bc3ab563ba944f1, type: 2}
 --- !u!1 &334545899
 GameObject:
   m_ObjectHideFlags: 0
@@ -662,6 +920,10 @@ PrefabInstance:
     - target: {fileID: 4037154219199540586, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_Name
       value: WashingMachine_PRF (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037154219199540586, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4037154219199540587, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_RootOrder
@@ -773,6 +1035,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WashingMachine_PRF (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4037154219199540586, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4037154219199540587, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -835,6 +1101,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WashingMachine_PRF (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4037154219199540586, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4037154219199540587, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -896,6 +1166,10 @@ PrefabInstance:
     - target: {fileID: 4037154219199540586, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_Name
       value: WashingMachine_PRF (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037154219199540586, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4037154219199540587, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_RootOrder
@@ -987,6 +1261,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 771738060}
+  - component: {fileID: 771738061}
   m_Layer: 0
   m_Name: Washing Machines
   m_TagString: Untagged
@@ -1028,6 +1303,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &771738061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771738059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3e23bbdda277d748b3ad9d78bf5b198, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: cda8f8b78aa412a48bc3ab563ba944f1, type: 2}
+  Reponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 771738059}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &850773650
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1038,6 +1341,10 @@ PrefabInstance:
     - target: {fileID: 4037154219199540586, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_Name
       value: WashingMachine_PRF (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037154219199540586, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4037154219199540587, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_RootOrder
@@ -1101,6 +1408,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WashingMachine_PRF (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 4037154219199540586, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4037154219199540587, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -1162,6 +1473,10 @@ PrefabInstance:
     - target: {fileID: 4037154219199540586, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_Name
       value: WashingMachine_PRF (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037154219199540586, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4037154219199540587, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_RootOrder
@@ -1225,6 +1540,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WashingMachine_PRF (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 4037154219199540586, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4037154219199540587, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -1287,6 +1606,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WashingMachine_PRF (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4037154219199540586, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4037154219199540587, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1348,6 +1671,10 @@ PrefabInstance:
     - target: {fileID: 4037154219199540586, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_Name
       value: WashingMachine_PRF (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037154219199540586, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4037154219199540587, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_RootOrder
@@ -1536,6 +1863,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WashingMachine_PRF (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 4037154219199540586, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4037154219199540587, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -1598,6 +1929,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WashingMachine_PRF (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4037154219199540586, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4037154219199540587, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1659,6 +1994,10 @@ PrefabInstance:
     - target: {fileID: 4037154219199540586, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_Name
       value: WashingMachine_PRF (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037154219199540586, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4037154219199540587, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_RootOrder
@@ -1950,6 +2289,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WashingMachine_PRF (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 4037154219199540586, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4037154219199540587, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -2011,6 +2354,10 @@ PrefabInstance:
     - target: {fileID: 4037154219199540586, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_Name
       value: WashingMachine_PRF (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037154219199540586, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4037154219199540587, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_RootOrder
@@ -2230,3 +2577,64 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+--- !u!1001 &6812457156753408818
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 312460241}
+    m_Modifications:
+    - target: {fileID: 6812457156735507760, guid: ad71067341cb9e843a1a485ada77a94e, type: 3}
+      propertyPath: m_Name
+      value: WashingIcon_PRF
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812457156735507760, guid: ad71067341cb9e843a1a485ada77a94e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812457156735507761, guid: ad71067341cb9e843a1a485ada77a94e, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812457156735507761, guid: ad71067341cb9e843a1a485ada77a94e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812457156735507761, guid: ad71067341cb9e843a1a485ada77a94e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812457156735507761, guid: ad71067341cb9e843a1a485ada77a94e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812457156735507761, guid: ad71067341cb9e843a1a485ada77a94e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812457156735507761, guid: ad71067341cb9e843a1a485ada77a94e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812457156735507761, guid: ad71067341cb9e843a1a485ada77a94e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812457156735507761, guid: ad71067341cb9e843a1a485ada77a94e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812457156735507761, guid: ad71067341cb9e843a1a485ada77a94e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812457156735507761, guid: ad71067341cb9e843a1a485ada77a94e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812457156735507761, guid: ad71067341cb9e843a1a485ada77a94e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ad71067341cb9e843a1a485ada77a94e, type: 3}

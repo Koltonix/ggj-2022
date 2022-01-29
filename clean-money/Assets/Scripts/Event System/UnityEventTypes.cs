@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace cm.Events
+namespace cm.events
 {
     [Serializable]
     public class Vector2Event : UnityEvent<Vector2> { };

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace cm.Events
+namespace cm.events
 {
     [CreateAssetMenu(fileName = "Debug Tools", menuName = "ScriptableObjects/Tools/Debug-Tools")]
     public class DebugEvents : ScriptableObject
