@@ -15,10 +15,30 @@ namespace cm.utilities
         private void Start()
         {
             Color colour = colours[Random.Range(0, colours.Length)];
+
+            int i = 0;
+
             foreach (Material mat in renderer.materials)
             {
-                mat.SetColor("_BaseColor", colour);
-                mat.SetColor("_Color", colour);
+                if (i == 0)
+                {
+                    Vector4 v4Colour = colour;
+
+                    v4Colour -= (0.2f * Vector4.one);
+
+                    Color newColour = v4Colour;
+
+                    mat.SetColor("_BaseColor", newColour);
+                    mat.SetColor("_Color", newColour);
+                }
+                else
+                {
+                    mat.SetColor("_BaseColor", colour);
+                    mat.SetColor("_Color", colour);
+                }
+
+                
+                i++;
             }
 
             Destroy(this);
