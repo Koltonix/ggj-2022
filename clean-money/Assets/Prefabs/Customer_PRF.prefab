@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 959847347003426996}
   - component: {fileID: 959847347003426999}
   - component: {fileID: 965905566818325127}
+  - component: {fileID: 502313127825431632}
   m_Layer: 0
   m_Name: Customer_PRF
   m_TagString: Untagged
@@ -63,6 +64,22 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &502313127825431632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959847347003426995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ece2f6e00bf07645a0eeda40edc7bc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  machine: {fileID: 0}
+  pointIndex: 0
+  moveSpeed: 2.5
+  state: 0
 --- !u!1 &959847347232143369
 GameObject:
   m_ObjectHideFlags: 0

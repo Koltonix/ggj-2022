@@ -1,10 +1,20 @@
 using UnityEngine;
 
-namespace gameplay
+namespace cm.gameplay
 {
     public class AIPath : MonoBehaviour
     {
         private Transform[] points = null;
+
+        public static AIPath Instance = null;
+        private void Awake()
+        {
+            if (Instance)
+                Destroy(this);
+
+            else
+                Instance = this;
+        }
 
         private void Start()
         {

@@ -22,9 +22,9 @@ namespace cm.gameplay
         protected UnityEvent onTimerEnd = null;
 
         [SerializeField]
-        private UnityEvent onStateEnter = null;
+        protected UnityEvent onStateEnter = null;
         [SerializeField]
-        private UnityEvent onStateExit = null;
+        protected UnityEvent onStateExit = null;
 
         protected virtual void Start()
         {
