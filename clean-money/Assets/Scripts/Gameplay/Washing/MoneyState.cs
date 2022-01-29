@@ -8,9 +8,6 @@ namespace cm.gameplay
     public class MoneyState : MachineState
     {   
         [SerializeField]
-        private KeyCode collectKey = KeyCode.E;
-
-        [SerializeField]
         private int amount = 50;
 
         [SerializeField]
@@ -31,11 +28,16 @@ namespace cm.gameplay
             return;
         }
 
+        protected override void PlayerInteract()
+        {
+            base.PlayerInteract();
+             
+            onCollect?.Invoke();     
+        }
+
         private void OnTriggerStay(Collider col)
         {
-            PlayerMovement player = col.gameObject.GetComponent<PlayerMovement>();
-            if (Input.GetKeyDown(collectKey) && player && canOccur)
-                onCollect?.Invoke();
+           
         }
     }
 }

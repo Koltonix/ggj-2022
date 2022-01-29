@@ -8,9 +8,6 @@ namespace cm.gameplay
     public class RepairState : MachineState
     {   
         [SerializeField]
-        private KeyCode repairKey = KeyCode.E;
-
-        [SerializeField]
         private int hitsRequired = 5;
         [SerializeField]
         private int hitsLeft = 0;
@@ -30,18 +27,14 @@ namespace cm.gameplay
         {
             return;
         }
-
-        private void OnTriggerStay(Collider col)
+        
+        protected override void PlayerInteract()
         {
-            PlayerMovement player = col.gameObject.GetComponent<PlayerMovement>();
-            if (Input.GetKeyDown(repairKey) && player && canOccur)
-            {
-                hitsLeft--;
-                onHitValue?.Invoke(hitsLeft);
-                if (hitsLeft <= 0)
-                    onTimerEnd?.Invoke();
-            }
-                
+            hitsLeft--;
+            onHitValue?.Invoke(hitsLeft);
+            
+            if (hitsLeft <= 0)
+                onTimerEnd?.Invoke();
         }
     }
 }

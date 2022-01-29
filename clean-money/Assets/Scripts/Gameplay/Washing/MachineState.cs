@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using cm.movement;
 
 namespace cm.gameplay
 {
@@ -7,6 +8,11 @@ namespace cm.gameplay
     {
         [SerializeField]
         protected bool canOccur  = false;
+        [SerializeField]
+        private bool playerNearby = false;
+
+        [SerializeField]
+        private KeyCode interactKey = KeyCode.E;
 
         public Vector2 timerRange = new Vector2(2.5f, 15.0f);
         [SerializeField]
@@ -25,10 +31,33 @@ namespace cm.gameplay
             _timer = GetValueInRange();
         }
 
+        protected virtual void Update()
+        {
+            if (Input.GetKeyDown(interactKey) && playerNearby && canOccur)
+                PlayerInteract();
+        }
+
         private void FixedUpdate()
         {
             if (canOccur)
                 CountDown();
+        }
+
+        private void OnTriggerEnter(Collider col)
+        {
+            PlayerMovement player = col.gameObject.GetComponent<PlayerMovement>();
+            playerNearby = player != null;
+        }
+
+        private void OnTriggerExit(Collider col)
+        {
+            PlayerMovement player = col.gameObject.GetComponent<PlayerMovement>();
+            playerNearby = !(player != null);
+        }
+
+        protected virtual void PlayerInteract()
+        {
+
         }
 
         public virtual void OnStateEnter()
