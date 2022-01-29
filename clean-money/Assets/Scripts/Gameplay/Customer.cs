@@ -16,7 +16,15 @@ namespace cm.gameplay
         public int pointIndex = 0;
 
         [SerializeField]
+        private float aimSpeed = 2.5f;
+        [SerializeField]
         private float moveSpeed = 2.5f;
+
+        [SerializeField]
+        private float distanceFromMachine = 1.0f;
+
+        [SerializeField]
+        private float distanceInFrontOfMachine = 1.25f;
 
         public MoveState state = MoveState.FOLLOWPATH;
 
@@ -33,6 +41,9 @@ namespace cm.gameplay
                     break;
 
                 case MoveState.WAITATMACHINE:
+                    Vector3 targetAim =  machine.transform.position - this.transform.position;
+                    targetAim.y = 0.0f;
+                    this.transform.forward = Vector3.Slerp(this.transform.forward, targetAim, Time.deltaTime * aimSpeed);
                     break; 
 
                 case MoveState.LEAVE:
@@ -46,7 +57,12 @@ namespace cm.gameplay
             Vector3 pos = AIPath.Instance.GetPoint(pointIndex).position;
             pos.y = this.transform.position.y;
 
-            this.transform.position = Vector3.Lerp(this.transform.position, pos, Time.deltaTime * moveSpeed);
+            this.transform.position += this.transform.forward * moveSpeed * Time.deltaTime;
+
+            Vector3 targetAim = pos - this.transform.position;
+            targetAim.y = 0.0f;
+
+            this.transform.forward = Vector3.Slerp(this.transform.forward, targetAim.normalized, Time.deltaTime * aimSpeed);
             
             if (Vector3.Distance(this.transform.position, pos) < 0.5f)
             {
@@ -55,16 +71,20 @@ namespace cm.gameplay
                     Destroy(this.gameObject);
             }
 
-            if (Vector3.Distance(this.transform.position, machine.transform.position) < 2.5f && state != MoveState.LEAVE)
+            if (Vector3.Distance(this.transform.position, machine.transform.position) < distanceFromMachine && state != MoveState.LEAVE)
                 state = MoveState.GOTOMACHINE;
         }
 
         private void GoToMachine()
         {
-            Vector3 targetPos = machine.transform.position + (machine.transform.forward * 1.5f);
-            this.transform.position = Vector3.Lerp(this.transform.position, targetPos , Time.deltaTime * moveSpeed);
+            Vector3 targetPos = machine.transform.position + (machine.transform.forward * distanceInFrontOfMachine);
+            Vector3 targetAim =  targetPos - this.transform.position;
+            targetAim.y = 0.0f;
 
-            if (Vector3.Distance(this.transform.position, targetPos) < 0.5f)
+            this.transform.forward = Vector3.Slerp(this.transform.forward, targetAim, Time.deltaTime * aimSpeed);
+            this.transform.position = Vector3.Lerp(this.transform.position, targetPos, moveSpeed * Time.deltaTime);
+
+            if (Vector3.Distance(this.transform.position, targetPos) < 0.1f)
                 state = MoveState.WAITATMACHINE;
         }
     }

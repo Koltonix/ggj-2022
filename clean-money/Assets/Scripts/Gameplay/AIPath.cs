@@ -57,6 +57,31 @@ namespace cm.gameplay
             return index;
         }
 
+        public float GetSpeedAtPoint(int index, float speed)
+        {
+            float totalDistance = GetTotalDistance();
+            float currentDistance = GetDistanceFromPoint(index);
+
+            return (currentDistance / totalDistance) * speed;
+        }
+
+        public float GetTotalDistance()
+        {
+            float distance = .0f;
+            for (int i = 0; i < points.Length - 1; i++)
+                distance += GetDistanceFromPoint(i);
+
+            return distance;
+        }
+
+        public float GetDistanceFromPoint(int index)
+        {
+            if (index >= points.Length)
+                return .0f;
+
+            return Vector3.Distance(points[index].position, points[index + 1].position);
+        }
+
         private void OnDrawGizmos()
         {
             Gizmos.color = Color.yellow;

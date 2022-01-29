@@ -194,8 +194,6 @@ MonoBehaviour:
   currentState: {fileID: 0}
   randomStates:
   - {fileID: 312460242}
-  - {fileID: 7643863431697224952}
-  - {fileID: 8115455891407508632}
   onStart:
     m_PersistentCalls:
       m_Calls: []
@@ -275,6 +273,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  customer: {fileID: 0}
+  customerPrefab: {fileID: 959847347003426995, guid: fbbb7df919dd82141ba3b46eff80aeeb, type: 3}
 --- !u!114 &312460244
 MonoBehaviour:
   m_ObjectHideFlags: 0
