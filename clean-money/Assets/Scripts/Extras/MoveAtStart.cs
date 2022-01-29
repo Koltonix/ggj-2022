@@ -13,11 +13,11 @@ public class MoveAtStart : MonoBehaviour
 
     public IEnumerator MoveLad()
     {
-        transform.position -= 1f * Vector3.forward;
+        transform.position -= (1.0f + Random.Range(0f, 0.1f)) * Vector3.forward;
 
         yield return new WaitForSeconds(0.1f);
 
-        transform.position += 1.01f * Vector3.forward;
+        transform.position += (1.01f + Random.Range(0f,0.1f)) * Vector3.forward;
 
         yield return null;
     }
