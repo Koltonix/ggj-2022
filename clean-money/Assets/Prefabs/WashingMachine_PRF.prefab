@@ -302,7 +302,19 @@ MonoBehaviour:
   hitsLeft: 0
   onHitValue:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6992996060026784110}
+        m_TargetAssemblyTypeName: cm.utilities.IntToTMPro, Assembly-CSharp
+        m_MethodName: UpdateText
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8115455891407508632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -588,6 +600,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6812457156735507761, guid: dabe07215e54288459b59c34f1509250, type: 3}
   m_PrefabInstance: {fileID: 6903897889441461550}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6992996060026784110 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4522614928953080896, guid: dabe07215e54288459b59c34f1509250, type: 3}
+  m_PrefabInstance: {fileID: 6903897889441461550}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08dd0124eb42ece43a1864a1e5c6884b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7389404164580617608
 PrefabInstance:
   m_ObjectHideFlags: 0
