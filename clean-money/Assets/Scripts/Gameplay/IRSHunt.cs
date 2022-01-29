@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 using cm.movement;
@@ -24,6 +25,13 @@ namespace cm.gameplay
         private float _ignoreDelay = 0.0f;
 
         public bool chase = false;
+        private Coroutine aiCoroutine = null;
+
+        [SerializeField]
+        [Range(0.0f, 1.0f)]
+        private float waitChance = 0.25f;
+        [SerializeField]
+        private Vector2 waitRange = new Vector2(0.5f, 5.0f);
 
         [SerializeField]
         private GameObject cylinder = null;
@@ -50,11 +58,20 @@ namespace cm.gameplay
             LocatePlayer();
 
             if (chase)
+            {
+                if (aiCoroutine != null)
+                {
+                    StopCoroutine(aiCoroutine);
+                    aiCoroutine = null;
+                }
+
                 RunItDown();
+            }
 
             else
             {
-                
+                if (aiCoroutine == null)
+                    aiCoroutine = StartCoroutine(WalkNStuff());
             }
 
         }
@@ -108,6 +125,42 @@ namespace cm.gameplay
                 Destroy(player.gameObject);
                 // END GAME
             }
+        }
+
+        private IEnumerator WalkNStuff()
+        {
+            int index = AIPath.Instance.GetClosestPointIndex(this.transform.position);
+            
+            Transform[] points = AIPath.Instance.points;
+            for (int i = index; i < points.Length; i++)
+            {
+                if (!points[i])
+                    continue;
+                
+                bool wait = Random.Range(0, 1.0f) < waitChance;
+
+                if (wait)
+                    yield return new WaitForSeconds(Random.Range(waitRange.x, waitRange.y));
+
+                yield return WalkTo(points[i].position);
+            }
+
+            Destroy(this.gameObject);
+
+            yield return null;
+        }
+
+        private IEnumerator WalkTo(Vector3 point)
+        {
+            while (Vector3.Distance(this.transform.position, point) > 0.5f)
+            {
+                agent.destination = point;
+                this.transform.forward = Vector3.Slerp(this.transform.forward, point - this.transform.position, Time.deltaTime * aimSpeed);
+
+                yield return new WaitForEndOfFrame();
+            }
+
+            yield return null;
         }
     }
 }

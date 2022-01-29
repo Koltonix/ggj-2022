@@ -4,7 +4,7 @@ namespace cm.gameplay
 {
     public class AIPath : MonoBehaviour
     {
-        private Transform[] points = null;
+        public Transform[] points = null;
 
         public static AIPath Instance = null;
         private void Awake()
