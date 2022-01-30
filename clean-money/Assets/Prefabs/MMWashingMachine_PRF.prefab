@@ -11,6 +11,22 @@ PrefabInstance:
       propertyPath: timerRange.y
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 312460242, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: onTimerEnd.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 312460242, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: onTimerEnd.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SetRandomState
+      objectReference: {fileID: 0}
+    - target: {fileID: 312460242, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: onTimerEnd.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 312460242, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: onTimerEnd.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 312460243, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: randomStates.Array.size
       value: 2
@@ -39,9 +55,37 @@ PrefabInstance:
       propertyPath: onStart.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 91522514596112414, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1008856497750077046, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1779907909382339370, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821279321901694272, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3210615285134484858, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3710917721311300412, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4037154219199540586, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_Name
       value: MMWashingMachine_PRF
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037154219199540586, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4037154219199540587, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_RootOrder
@@ -49,7 +93,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4037154219199540587, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.5
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 4037154219199540587, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_LocalPosition.y
@@ -86,6 +130,18 @@ PrefabInstance:
     - target: {fileID: 4037154219199540587, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037154219376600954, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037154219442516152, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7389404164445658602, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8115455891407508632, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: timerRange.x

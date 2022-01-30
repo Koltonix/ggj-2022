@@ -17,7 +17,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &381676834897310924
 Transform:
@@ -116,7 +116,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7661087181655545458
 Transform:
@@ -165,7 +165,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4037154219199540587
 Transform:
@@ -280,11 +280,11 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 312460243}
         m_TargetAssemblyTypeName: cm.gameplay.WashingMachines, Assembly-CSharp
-        m_MethodName: SetRandomState
-        m_Mode: 1
+        m_MethodName: SetNewState
+        m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 312460244}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: cm.gameplay.MachineState, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -580,7 +580,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4037154219376600958
 Transform:
@@ -614,7 +614,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6812457156735507760, guid: 0bd05bf7345f9584bb6be0cae3a839c2, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6812457156735507761, guid: 0bd05bf7345f9584bb6be0cae3a839c2, type: 3}
       propertyPath: m_RootOrder
@@ -717,7 +717,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6812457156735507760, guid: dabe07215e54288459b59c34f1509250, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6812457156735507761, guid: dabe07215e54288459b59c34f1509250, type: 3}
       propertyPath: m_RootOrder
@@ -765,15 +765,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7831837322475503122, guid: dabe07215e54288459b59c34f1509250, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8305190879113203796, guid: dabe07215e54288459b59c34f1509250, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8712389491800721518, guid: dabe07215e54288459b59c34f1509250, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dabe07215e54288459b59c34f1509250, type: 3}
@@ -815,7 +815,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6812457156735507760, guid: ad71067341cb9e843a1a485ada77a94e, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6812457156735507761, guid: ad71067341cb9e843a1a485ada77a94e, type: 3}
       propertyPath: m_RootOrder
