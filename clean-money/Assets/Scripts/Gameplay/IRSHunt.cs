@@ -52,12 +52,9 @@ namespace cm.gameplay
         // Doesn't run in Edit mode anyway.
         private void FixedUpdate()
         {
-            if (!player)
-                return;
-
             LocatePlayer();
 
-            if (chase)
+            if (chase && player)
             {
                 if (aiCoroutine != null)
                 {
@@ -81,7 +78,7 @@ namespace cm.gameplay
             RaycastHit[] hits = Physics.SphereCastAll(this.transform.position, radius, this.transform.forward);
             foreach (RaycastHit hit in hits)
             {
-                if (hit.collider.gameObject == player.gameObject)
+                if (player && hit.collider.gameObject == player.gameObject)
                 {
                     RaycastHit check;
                     Physics.Raycast(this.transform.position, player.transform.position - this.transform.position, out check, radius);
