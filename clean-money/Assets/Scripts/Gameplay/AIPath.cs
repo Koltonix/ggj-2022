@@ -14,10 +14,7 @@ namespace cm.gameplay
 
             else
                 Instance = this;
-        }
 
-        private void Start()
-        {
             points = GetPointsInChildren();
         }
 

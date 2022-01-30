@@ -1,4 +1,5 @@
 using UnityEngine;
+using cm.events;
 
 namespace cm.movement
 {
@@ -20,6 +21,9 @@ namespace cm.movement
         private float aimSpeed = 1.25f;
         [SerializeField]
         private new Rigidbody rigidbody = null;
+
+        [SerializeField]
+        private GameEvent onDeath = null;
 
         private void Update()
         {
@@ -48,6 +52,11 @@ namespace cm.movement
                 return;
 
             rigidbody.velocity = rigidbody.transform.forward * moveSpeed * Time.deltaTime;
+        }
+
+        private void OnDestroy()
+        {
+            onDeath.Raise();
         }
     }
 }

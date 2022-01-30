@@ -120,7 +120,7 @@ namespace cm.gameplay
 
         private void OnTriggerEnter(Collider col)
         {
-            if (col.gameObject == player.gameObject)
+            if (player && col.gameObject == player.gameObject)
             {
                 Destroy(player.gameObject);
                 // END GAME

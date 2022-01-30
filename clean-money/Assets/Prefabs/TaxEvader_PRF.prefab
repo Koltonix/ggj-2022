@@ -196,6 +196,7 @@ MonoBehaviour:
   moveSpeed: 350
   aimSpeed: 5
   rigidbody: {fileID: 2387766225519013024}
+  onDeath: {fileID: 11400000, guid: 50759a5a09085f24b90934e68c35b648, type: 2}
 --- !u!1 &2803999845927324686
 GameObject:
   m_ObjectHideFlags: 0
