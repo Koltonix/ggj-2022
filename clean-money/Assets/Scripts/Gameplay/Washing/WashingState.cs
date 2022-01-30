@@ -37,6 +37,8 @@ namespace cm.gameplay
         {
             base.OnStateEnter();
 
+            customerArrived = false;
+
             SpawnCustomer();
         }
 
@@ -46,7 +48,6 @@ namespace cm.gameplay
                 return;
 
 
-            customerArrived = false;
             onCustomerLeave.Invoke();
 
              // Send the Customer on their way!
