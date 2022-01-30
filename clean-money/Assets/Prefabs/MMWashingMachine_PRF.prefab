@@ -11,22 +11,6 @@ PrefabInstance:
       propertyPath: timerRange.y
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 312460242, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
-      propertyPath: onTimerEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 312460242, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
-      propertyPath: onTimerEnd.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetRandomState
-      objectReference: {fileID: 0}
-    - target: {fileID: 312460242, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
-      propertyPath: onTimerEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 312460242, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
-      propertyPath: onTimerEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 312460243, guid: 7a3a2dbf91e80de4c874ba9da9b80e76, type: 3}
       propertyPath: randomStates.Array.size
       value: 2

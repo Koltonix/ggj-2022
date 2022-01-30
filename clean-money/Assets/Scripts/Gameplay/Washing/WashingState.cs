@@ -9,14 +9,6 @@ namespace cm.gameplay
         [SerializeField]
         private GameObject customerPrefab = null;
 
-        protected override void Update()
-        {
-            base.Update();
-
-            onTimerEnd.AddListener(ReleaseCustomer);
-            // DO ONTIMER END WHEN THE CUSTOMER IS AT THE END.
-        }
-
         protected override void CountDown()
         {
             if (customer && Vector3.Distance(customer.transform.position, this.transform.position) < 2.5f)
@@ -32,7 +24,6 @@ namespace cm.gameplay
 
             SpawnCustomer();
         }
-
 
         public void ReleaseCustomer()
         {
