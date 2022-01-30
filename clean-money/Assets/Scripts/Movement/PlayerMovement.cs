@@ -6,6 +6,7 @@ namespace cm.movement
     public class PlayerMovement : MonoBehaviour
     {
         [Header("Input")]
+        private Camera mainCamera = null;
         [SerializeField]
         private string horizontalKey = "MOVEX";
         [SerializeField]
@@ -28,6 +29,8 @@ namespace cm.movement
         [SerializeField]
         private GameEvent onDeath = null;
 
+        private void Awake() => mainCamera = Camera.main;
+
         private void Update()
         {
             inputDir = GetInputDirection();
@@ -35,8 +38,18 @@ namespace cm.movement
 
         private void FixedUpdate()
         {
-            AimCharacter(inputDir);
-            MoveCharacter(inputDir);
+            Vector3 relDir = GetInputRelToCamera(inputDir);
+
+            AimCharacter(relDir);
+            MoveCharacter(relDir);
+        }
+
+        private Vector3 GetInputRelToCamera(Vector3 dir)
+        {
+            Vector3 cameraForward = new Vector3(mainCamera.transform.forward.x, 0.0f, mainCamera.transform.forward.z).normalized;
+            Vector3 cameraRight = new Vector3(mainCamera.transform.forward.z, 0.0f, mainCamera.transform.right.z).normalized;
+
+            return cameraForward * inputDir.z + cameraRight * inputDir.x;
         }
 
         private Vector3 GetInputDirection()

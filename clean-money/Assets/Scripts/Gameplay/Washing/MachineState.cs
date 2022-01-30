@@ -70,8 +70,6 @@ namespace cm.gameplay
         {
             onStateExit.Invoke();
             canOccur = false;
-
-            playerNearby = false;
         }
 
         protected virtual void CountDown()
