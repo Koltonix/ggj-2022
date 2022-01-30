@@ -49,6 +49,7 @@ namespace cm.gameplay
             playerNearby = player != null;
         }
 
+
         private void OnTriggerExit(Collider col)
         {
             PlayerMovement player = col.gameObject.GetComponent<PlayerMovement>();
@@ -72,6 +73,10 @@ namespace cm.gameplay
             canOccur = false;
 
             playerNearby = false;
+
+            BoxCollider box = this.GetComponent<BoxCollider>();
+            box.enabled = false;
+            box.enabled = true;
         }
 
         protected virtual void CountDown()
