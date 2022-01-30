@@ -71,7 +71,7 @@ namespace cm.gameplay
                     Destroy(this.gameObject);
             }
 
-            if (Vector3.Distance(this.transform.position, machine.transform.position) < distanceFromMachine && state != MoveState.LEAVE)
+            if (machine && Vector3.Distance(this.transform.position, machine.transform.position) < distanceFromMachine && state != MoveState.LEAVE)
                 state = MoveState.GOTOMACHINE;
         }
 

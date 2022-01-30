@@ -20,8 +20,6 @@ namespace cm.gameplay
         private void Start()
         {
             onStart?.Invoke();
-
-            SetRandomState();
         }
 
         private void FixedUpdate()

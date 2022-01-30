@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1071500690}
   - component: {fileID: 1071500689}
   - component: {fileID: 1071500688}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2387766225143766045}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,10 +123,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2387766225519013027}
   - component: {fileID: 2387766225519013024}
-  - component: {fileID: 2387766225519013025}
+  - component: {fileID: 904277404375224500}
   - component: {fileID: 1328551310}
   - component: {fileID: 6429376780860495691}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: IRSOfficer_PRF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -163,22 +163,21 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 84
   m_CollisionDetection: 0
---- !u!136 &2387766225519013025
-CapsuleCollider:
+--- !u!135 &904277404375224500
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2387766225519013028}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.9, z: 0}
+  serializedVersion: 2
+  m_Radius: 0.6
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!195 &1328551310
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -189,7 +188,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 2.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -215,8 +214,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   moveSpeed: 2.5
+  aimSpeed: 10
   radius: 2.5
+  ignoreDelay: 3
   chase: 0
+  waitChance: 0.25
+  waitRange: {x: 0.5, y: 2.5}
   cylinder: {fileID: 1071500686}
 --- !u!1 &2803999845927324686
 GameObject:
@@ -229,7 +232,7 @@ GameObject:
   - component: {fileID: 1215712421461044924}
   - component: {fileID: 9101320428311498382}
   - component: {fileID: 293895075819797747}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Face
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -310,7 +313,7 @@ GameObject:
   - component: {fileID: 5634236113713310006}
   - component: {fileID: 8763732683936245395}
   - component: {fileID: 6808315879673090649}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: human
   m_TagString: Untagged
   m_Icon: {fileID: 0}

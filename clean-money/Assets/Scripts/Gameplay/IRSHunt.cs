@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 using cm.movement;
@@ -24,6 +25,13 @@ namespace cm.gameplay
         private float _ignoreDelay = 0.0f;
 
         public bool chase = false;
+        private Coroutine aiCoroutine = null;
+
+        [SerializeField]
+        [Range(0.0f, 1.0f)]
+        private float waitChance = 0.25f;
+        [SerializeField]
+        private Vector2 waitRange = new Vector2(0.5f, 5.0f);
 
         [SerializeField]
         private GameObject cylinder = null;
@@ -44,17 +52,23 @@ namespace cm.gameplay
         // Doesn't run in Edit mode anyway.
         private void FixedUpdate()
         {
-            if (!player)
-                return;
-
             LocatePlayer();
 
             if (chase)
+            {
+                if (aiCoroutine != null)
+                {
+                    StopCoroutine(aiCoroutine);
+                    aiCoroutine = null;
+                }
+
                 RunItDown();
+            }
 
             else
             {
-                
+                if (aiCoroutine == null)
+                    aiCoroutine = StartCoroutine(WalkNStuff());
             }
 
         }
@@ -64,10 +78,10 @@ namespace cm.gameplay
             RaycastHit[] hits = Physics.SphereCastAll(this.transform.position, radius, this.transform.forward);
             foreach (RaycastHit hit in hits)
             {
-                if (hit.collider.gameObject == player.gameObject)
+                if (player && hit.collider.gameObject == player.gameObject)
                 {
                     RaycastHit check;
-                    Physics.Raycast(this.transform.position, player.transform.position - this.transform.position, out check, radius);
+                    Physics.Raycast(this.transform.position + Vector3.up * 1.0f, player.transform.position - this.transform.position, out check, radius);
 
                     if (check.collider && check.collider.gameObject == player.gameObject)
                         {
@@ -91,6 +105,9 @@ namespace cm.gameplay
 
         private void RunItDown()
         {
+            if (!player)
+                return;
+
             agent.SetDestination(player.transform.position);
             this.transform.forward = Vector3.Slerp(this.transform.forward, player.transform.position - this.transform.position, Time.deltaTime * aimSpeed);
         }
@@ -103,11 +120,47 @@ namespace cm.gameplay
 
         private void OnTriggerEnter(Collider col)
         {
-            if (col.gameObject == player.gameObject)
+            if (player && col.gameObject == player.gameObject)
             {
                 Destroy(player.gameObject);
                 // END GAME
             }
+        }
+
+        private IEnumerator WalkNStuff()
+        {
+            int index = AIPath.Instance.GetClosestPointIndex(this.transform.position);
+            
+            Transform[] points = AIPath.Instance.points;
+            for (int i = index; i < points.Length; i++)
+            {
+                if (!points[i])
+                    continue;
+                
+                bool wait = Random.Range(0, 1.0f) < waitChance;
+
+                if (wait)
+                    yield return new WaitForSeconds(Random.Range(waitRange.x, waitRange.y));
+
+                yield return WalkTo(points[i].position);
+            }
+
+            Destroy(this.gameObject);
+
+            yield return null;
+        }
+
+        private IEnumerator WalkTo(Vector3 point)
+        {
+            while (Vector3.Distance(this.transform.position, point) > 0.5f)
+            {
+                agent.destination = point;
+                this.transform.forward = Vector3.Slerp(this.transform.forward, point - this.transform.position, Time.deltaTime * aimSpeed);
+
+                yield return new WaitForEndOfFrame();
+            }
+
+            yield return null;
         }
     }
 }
