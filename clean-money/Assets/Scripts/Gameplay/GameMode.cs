@@ -36,7 +36,7 @@ namespace cm.gameplay
             money += value;
             
             if (scoreText)
-                scoreText.text = money.ToString();
+                scoreText.text = '$' + money.ToString();
         }
 
         private void SpawnIRSAgent()
