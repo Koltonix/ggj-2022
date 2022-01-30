@@ -10,7 +10,7 @@ namespace cm.utilities
         [SerializeField]
         private Color[] colours = null;
 
-        private void Awake() => renderer = this.GetComponent<MeshRenderer>();
+        private void Awake() => renderer = this.GetComponent<Renderer>();
 
         private void Start()
         {

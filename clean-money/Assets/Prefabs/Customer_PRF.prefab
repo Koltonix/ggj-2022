@@ -298,6 +298,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7114023379015459311}
   - component: {fileID: 6956741198045014192}
+  - component: {fileID: 4432566644643019091}
   m_Layer: 0
   m_Name: human
   m_TagString: Untagged
@@ -374,6 +375,30 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.97431886, y: 0.00000008940697, z: 0}
     m_Extent: {x: 0.9743186, y: 0.49706602, z: 0.03501555}
   m_DirtyAABB: 0
+--- !u!114 &4432566644643019091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6144096781847761556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eec8b86f4e28264ebf1be83362f0aa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colours:
+  - {r: 0.9056604, g: 0.2007832, b: 0.2007832, a: 0}
+  - {r: 0.90588236, g: 0.62111694, b: 0.19999996, a: 0}
+  - {r: 0.90588236, g: 0.8847187, b: 0.19999996, a: 0}
+  - {r: 0.69523245, g: 0.90588236, b: 0.19999996, a: 0}
+  - {r: 0.44483715, g: 0.90588236, b: 0.19999996, a: 0}
+  - {r: 0.19999996, g: 0.90588236, b: 0.3583963, a: 0}
+  - {r: 0.19999996, g: 0.90588236, b: 0.6567283, a: 0}
+  - {r: 0.19999996, g: 0.25412682, b: 0.90588236, a: 0}
+  - {r: 0.5126916, g: 0.19999996, b: 0.90588236, a: 0}
+  - {r: 0.86547124, g: 0.19999996, b: 0.90588236, a: 0}
+  - {r: 0.90588236, g: 0.19999996, b: 0.5660362, a: 0}
 --- !u!1 &8329055336105360995
 GameObject:
   m_ObjectHideFlags: 0
