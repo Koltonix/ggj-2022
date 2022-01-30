@@ -54,7 +54,7 @@ namespace cm.gameplay
         {
             LocatePlayer();
 
-            if (chase && player)
+            if (chase)
             {
                 if (aiCoroutine != null)
                 {
@@ -81,7 +81,7 @@ namespace cm.gameplay
                 if (player && hit.collider.gameObject == player.gameObject)
                 {
                     RaycastHit check;
-                    Physics.Raycast(this.transform.position, player.transform.position - this.transform.position, out check, radius);
+                    Physics.Raycast(this.transform.position + Vector3.up * 1.0f, player.transform.position - this.transform.position, out check, radius);
 
                     if (check.collider && check.collider.gameObject == player.gameObject)
                         {
@@ -105,6 +105,9 @@ namespace cm.gameplay
 
         private void RunItDown()
         {
+            if (!player)
+                return;
+
             agent.SetDestination(player.transform.position);
             this.transform.forward = Vector3.Slerp(this.transform.forward, player.transform.position - this.transform.position, Time.deltaTime * aimSpeed);
         }
