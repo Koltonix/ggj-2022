@@ -1351,6 +1351,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5748287415333372989, guid: 0083d4fc1fd4c44428b57a33d4ca96e2, type: 3}
+      propertyPath: onCustomerLeave.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748287415333372989, guid: 0083d4fc1fd4c44428b57a33d4ca96e2, type: 3}
+      propertyPath: onCustomerLeave.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748287415333372989, guid: 0083d4fc1fd4c44428b57a33d4ca96e2, type: 3}
+      propertyPath: onCustomerLeave.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748287415333372989, guid: 0083d4fc1fd4c44428b57a33d4ca96e2, type: 3}
+      propertyPath: onCustomerLeave.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748287415333372989, guid: 0083d4fc1fd4c44428b57a33d4ca96e2, type: 3}
+      propertyPath: onCustomerLeave.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748287415333372989, guid: 0083d4fc1fd4c44428b57a33d4ca96e2, type: 3}
+      propertyPath: onCustomerLeave.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.Animator, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748287415333372989, guid: 0083d4fc1fd4c44428b57a33d4ca96e2, type: 3}
+      propertyPath: onCustomerLeave.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748287415333372989, guid: 0083d4fc1fd4c44428b57a33d4ca96e2, type: 3}
+      propertyPath: onCustomerLeave.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8629141723363093124, guid: 0083d4fc1fd4c44428b57a33d4ca96e2, type: 3}
       propertyPath: m_RootOrder
       value: 10

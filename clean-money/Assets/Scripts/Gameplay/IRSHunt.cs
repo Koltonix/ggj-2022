@@ -11,9 +11,7 @@ namespace cm.gameplay
         private NavMeshAgent agent = null;
 
         public PlayerMovement player = null;
-
-        [SerializeField]
-        private float moveSpeed = 2.5f;
+        
         [SerializeField]
         private float aimSpeed = 1.25f;
 

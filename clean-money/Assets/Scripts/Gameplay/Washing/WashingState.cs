@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace cm.gameplay
 {
@@ -9,10 +10,24 @@ namespace cm.gameplay
         [SerializeField]
         private GameObject customerPrefab = null;
 
+        public bool customerArrived = false;
+
+        public UnityEvent onCustomerNear = null;
+        public UnityEvent onCustomerLeave = null;
+
+
         protected override void CountDown()
         {
             if (customer && Vector3.Distance(customer.transform.position, this.transform.position) < 2.5f)
+            {
                 base.CountDown();
+
+                if (!customerArrived)
+                {
+                    customerArrived = true;
+                    onCustomerNear.Invoke();
+                }
+            }
 
             // ONLY COUNTDOWN WHEN THE CUSTOMER IS THERE
             return;
@@ -29,6 +44,10 @@ namespace cm.gameplay
         {
             if (!customer)
                 return;
+
+
+            customerArrived = false;
+            onCustomerLeave.Invoke();
 
              // Send the Customer on their way!
             customer.state = MoveState.LEAVE;

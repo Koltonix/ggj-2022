@@ -305,18 +305,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 3443663885170960388}
-        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-        m_MethodName: SetTrigger
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Cycle
-          m_BoolArgument: 1
-        m_CallState: 2
   onStateExit:
     m_PersistentCalls:
       m_Calls:
@@ -332,6 +320,27 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  customer: {fileID: 0}
+  customerPrefab: {fileID: 959847347003426995, guid: fbbb7df919dd82141ba3b46eff80aeeb, type: 3}
+  customerArrived: 0
+  onCustomerNear:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3443663885170960388}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Cycle
+          m_BoolArgument: 0
+        m_CallState: 2
+  onCustomerLeave:
+    m_PersistentCalls:
+      m_Calls:
       - m_Target: {fileID: 3443663885170960388}
         m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
         m_MethodName: SetTrigger
@@ -344,8 +353,6 @@ MonoBehaviour:
           m_StringArgument: CompleteCycle
           m_BoolArgument: 0
         m_CallState: 2
-  customer: {fileID: 0}
-  customerPrefab: {fileID: 959847347003426995, guid: fbbb7df919dd82141ba3b46eff80aeeb, type: 3}
 --- !u!114 &312460244
 MonoBehaviour:
   m_ObjectHideFlags: 0
