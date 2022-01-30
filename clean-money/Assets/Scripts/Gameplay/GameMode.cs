@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using TMPro;
 namespace cm.gameplay
 {
     public class GameMode : MonoBehaviour
@@ -12,6 +12,9 @@ namespace cm.gameplay
         private float countDown = 0.0f;
         [SerializeField]
         private GameObject irsPrefab = null;
+
+        [SerializeField]
+        private TMP_Text scoreText = null;
 
         private void Start()
         {
@@ -31,6 +34,9 @@ namespace cm.gameplay
         public void IncreaseMoney(int value)
         {
             money += value;
+            
+            if (scoreText)
+                scoreText.text = money.ToString();
         }
 
         private void SpawnIRSAgent()
