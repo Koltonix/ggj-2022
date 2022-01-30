@@ -23,6 +23,9 @@ namespace cm.movement
         private new Rigidbody rigidbody = null;
 
         [SerializeField]
+        private float richochetForce = 15.0f;
+
+        [SerializeField]
         private GameEvent onDeath = null;
 
         private void Update()
@@ -51,7 +54,14 @@ namespace cm.movement
             if (dir.normalized.magnitude < 0.25f)
                 return;
 
-            rigidbody.velocity = rigidbody.transform.forward * moveSpeed * Time.deltaTime;
+            rigidbody.velocity += rigidbody.transform.forward * moveSpeed * Time.deltaTime;
+        }
+        
+        private void OnCollisionEnter(Collision col)
+        {
+            Vector3 oppositeDir = (this.transform.position - col.GetContact(0).point).normalized;
+            oppositeDir.y = 0.0f;
+            rigidbody.AddForce(oppositeDir * richochetForce, ForceMode.Impulse);
         }
 
         private void OnDestroy()
